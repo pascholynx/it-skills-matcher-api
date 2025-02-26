@@ -6,8 +6,6 @@ require('dotenv').config();
 const app = express();
 
 // Middleware
-app.use(cors());
-const cors = require('cors');
 app.use(cors({
   origin: '*',  // Allow all origins (for testing, restrict in production)
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
